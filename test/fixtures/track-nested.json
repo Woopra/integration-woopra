@@ -2,6 +2,7 @@
   "input": {
     "type": "track",
     "userId": "user-id",
+    "anonymousId": "Anon-ID",
     "event": "my-event",
     "timestamp": "2014",
     "properties": {
@@ -33,7 +34,7 @@
     },
     "ce_products": "[{\"id\":7,\"name\":\"Multi\",\"price\":7.95,\"quantity\":1},{\"id\":6,\"name\":\"Single\",\"price\":1.95,\"quantity\":2}]",
     "host": "ivolo.me",
-    "cookie": "e35c1a36e525c2e4642c43b55246de30",
+    "cookie": "ec5d2c4e2d35366a53669ad103c80881",
     "timeout": 30,
     "timestamp": 1388534400000,
     "context": "{}"

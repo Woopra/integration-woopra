@@ -2,6 +2,7 @@
   "input": {
     "type": "identify",
     "userId": "user-id",
+    "anonymousId": "Anon-ID",
     "timestamp": "2014",
     "traits": {
       "name": "john doe",
@@ -13,7 +14,7 @@
     }
   },
   "output": {
-    "cookie": "e35c1a36e525c2e4642c43b55246de30",
+    "cookie": "ec5d2c4e2d35366a53669ad103c80881",
     "cv_name": "john doe",
     "cv_id":"user-id",
     "cv_email":"name@example.com",

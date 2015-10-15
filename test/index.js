@@ -72,6 +72,7 @@ describe('Woopra', function(){
         context: { os: { name: 'iPhone OS', version: '8.1.3' }, ip: '127.0.0.1' },
         timestamp: new Date(),
         userId: 'userId',
+        anonymousId: 'Anon-ID',
         event: 'event'
       };
 
@@ -80,7 +81,7 @@ describe('Woopra', function(){
         .track(track)
         .query({
           timestamp: track.timestamp.getTime().toString(),
-          cookie: md5('userId'),
+          cookie: md5(track.anonymousId),
           context: JSON.stringify(track.context),
           host: settings.domain,
           cv_id: 'userId',
@@ -101,7 +102,8 @@ describe('Woopra', function(){
         traits: { company: 'company', name: 'name', email: 'name@example.com' },
         context: { os: { name: 'iPhone OS', version: '8.1.3' }, ip: '127.0.0.1' },
         timestamp: new Date(),
-        userId: 'userId'
+        userId: 'userId',
+        anonymousId: 'Anon-ID'
       };
 
       test
@@ -111,7 +113,7 @@ describe('Woopra', function(){
           cv_id: 'userId',
           cv_email: 'name@example.com',
           timestamp: identify.timestamp.getTime().toString(),
-          cookie: md5('userId'),
+          cookie: md5(identify.anonymousId),
           host: settings.domain,
           cv_company: 'company',
           cv_name: 'name',
