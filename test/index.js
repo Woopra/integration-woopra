@@ -83,7 +83,7 @@ describe('Woopra', function(){
           cookie: md5('userId'),
           context: JSON.stringify(track.context),
           host: settings.domain,
-          cv_id: 'userId',
+          cv_segment_id: 'userId',
           cv_email: 'name@example.com',
           event: 'event',
           ce_revenue: '100',
@@ -108,7 +108,7 @@ describe('Woopra', function(){
         .set(settings)
         .identify(identify)
         .query({
-          cv_id: 'userId',
+          cv_segment_id: 'userId',
           cv_email: 'name@example.com',
           timestamp: identify.timestamp.getTime().toString(),
           cookie: md5('userId'),

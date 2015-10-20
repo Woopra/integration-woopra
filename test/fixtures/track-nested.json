@@ -24,7 +24,7 @@
     }
   },
   "output": {
-    "cv_id": "user-id",
+    "cv_segment_id": "user-id",
     "event": "my-event",
     "ce_property": true,
     "ce_revenue": 19.99,
